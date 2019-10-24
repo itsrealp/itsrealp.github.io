@@ -1,4 +1,5 @@
 body {background-color: lightyellow;}
-p{ font-weight: bold; }
+p{ text-align: justify; }
 ul{list-style-type: circle;}
 ol {list-style-type: decimal;}
+li>p {font-weight: bold;}
