@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма</title>
+	<script type="text/javascript">
+		function hello() {
+			x = document.form.user.value;
+			y = document.form.email.value;
+			z = document.form.date.value;
+			alert('Вітаємо, '+x+ "\nВи зареєстровані на сайті Професії майбутнього з такими даними: \nВаша пошта - " +y+ "\nДата народження - " +z)
+		}
+	</script>
+</head>
+<body>
+	<form name="form">
+<p>Введіть свої дані:</p>
+<fieldset><p>Обов'язкове поле</p>
+<p>Ім'я: <input name="user" required placeholder="Уведіть ім'я"></p>
+<p> Прізвище: <input name="name" required placeholder="Уведіть прізвище"></p>
+<p> E-mail: <input type="email" name="email" required placeholder="Уведіть свою пошту"></p>
+<p> Пароль: <input type="password" name="password" required placeholder="Створіть пароль"> </p>
+</fieldset>
+<br><br>
+<fieldset><p>Необо'язкове поле</p>
+<p>Стать:</p>
+<p>Чоловік<input type="radio" name="sex"</p>
+<p>Жінка<input type="radio" name="sex"</p>
+<p> Дата народження: <input type="date" name="date"</p>
+<p> Хобі:</p>
+<p>Танці<input type="checkbox" name="hobby"> </p>
+<p>Вишивання<input type="checkbox" name="hobby"> </p>
+<p>Читання<input type="checkbox" name="hobby"> </p>
+<p>Вивчення іноземних мов<input type="checkbox" name="hobby"> </p>
+<p>Інше<input type="checkbox" name="hobby"> </p>
+<br><br>
+</fieldset>
+<input type="button" name="b1" value="Ok" onclick="hello()">
+</form>
+</body>
+</html>
